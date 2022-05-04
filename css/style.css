@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.527);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* header */
+/* header1*/
+.header1{
+    width: 80%;
+    margin: auto;
+    
+}
+.header1-ul{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    direction: rtl;
+}
+.header1-ul li{
+    min-width: 50px;
+    flex-shrink: 0;
+    padding: 20px;
+   list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 23px;
+    color: #ffffff;
+}
+a:hover{
+    text-decoration: underline;
+}
+.header2{
+    width: 100%;
+    background-color: blue;
+}
+.header2-cont{
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    width: 85%;
+    margin: auto;
+}
+.header2-left{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header2-cont-enter{
+    color: rgb(255, 255, 255);
+}
+.header2-left-btn button{
+    padding: 5px;
+    border: 0;
+}
+.header2-left-btn-arbic{
+    background-color: green;
+    color: aliceblue;
+}
+/* header */
+.sec-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+.sec-cont-left{
+    min-width: 70%;
+}
+.sec-cont-right{
+    min-width: 30%;
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    .sec-cont{
+        flex-direction: column;/* جعل عنصر الفلاكس باتاجه العمودي*/
+    }
+    .add-advertisement{
+        direction: rtl;/* تغير اتاجه زر اضافة اعلان الى اتجاه اليمين مع نقص حجم الشاشه */
+        padding: 5px;/* توسيع العنصرمن جميع الاتجاهات */
+    }
+}
+/* اضافة اعلانات */
+.add-advertisement{
+    padding: 20px 0;/* ازاحة زراضافة اعلان  من المحتوى من الاعلاء و الاسفل */
+}
+.advertisement-btn{
+    padding: 10px;/* توسيع العنصرمن جميع الاتجاهات */
+    font-size: clamp(16px,2vw,22px);/* تقليل حجم الخط بشكل تدريجي مع نقص حجم الشاشه */
+    color: rgb(1, 94, 94);
+}
+.sec-left-mean1{/* المحتوى الرائيسي للعناصر */
+    display: flex;
+    overflow-x: auto;
+    text-align: center;
+    color: #ffffff;
+}
+.sec-left-mean1,.sec-left-mean2,.select1,.left-adver-item-1{
+    direction: rtl;
+}
+.sec-left-mean1 figure{
+    padding: 10px;
+    margin-left: 5px;
+    flex-shrink: 0;/* جعل العنصار منكمشه*/
+    border-radius: 10px;
+}
+.sec-left-mean1 figure:hover{/*عند وضع المؤشر على النعصر تضهر خلفيه*/
+    background-color: #0465c0b9;
+}
+.sec-left-mean2-car{
+    overflow-x: auto;
+    display: flex;
+    padding: 10px 0;
+}
+.sec-left-mean2-car a{
+    padding: 5px;
+    background-color: rgba(0, 102, 255, 0.418);
+    flex-shrink: 0;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+/* select1 */
+.select1{
+    padding: 10px 0 50px 0;
+}
+.select1 select{
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: blue;
+}
+.cont-left-adver-item{/* cont-left-adver  <!-- منطقه محتوى الاعلانات  -->*/
+    display: flex;
+    width: 100%;
+    height: 95px;
+    background-color: rgba(7, 65, 104, 0.514);
+    margin-top: 10px;
+}
+.left-adver-item-1{/* ><!-- تحتوي على موقع الشخص الذي عمل الاعلان و اسم المعلن و متى كان الاعلان و عنوان الاعلان--> */
+    width: 100%;
+}
+.left-adver-item-object h3{/* ><!-- ت عنوان الاعلان--> */
+    width: 100%;
+    color: rgb(68, 133, 3);
+    flex-shrink: 0;
+}
+.left-adver-item-1-1{/*  <!-- تحتوي على موقع الشخص الذي عمل الاعلان و اسم المعلن و متى كان الاعلان --> */
+    display: flex;
+    height: 75%;
+}
+.div2{
+    width: 50%;
+    height: 80%;
+    align-self: flex-end;
+}
+.div1{
+    width: 50%;
+    height: 40%;
+    align-self: flex-end;
+}
+.divv{
+    padding-top: 10px;
+}
+.left-adver-item-img{
+    margin-left: 50px;
+}
+/* من غير لون */
+.no-color{
+    background-color: black;
+}
+/* قسم اليمين */
+ /* قسم اليمين المحتوى الاول */
+.sec-cont-right-cont{
+     width: 90%;
+     margin: auto;
+}
+/* الخط الموجود اسفل */
+.right-cont-line{
+    width: 90%;
+    margin: auto;
+    display: block;
+    height: 3px;
+    background-color: blue;
+}
+.right-cont-sajal{
+    line-height: 50px;
+}
+/* <!-- المحتوى اختيار موديلات السيارات --> */
+.right-selector-selector{
+    color: blue;
+    font-size: 20px;
+    direction: rtl;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+}
+.right-search,.sec-left-mean1 figure,.advertisement-btn,.left-adver-item-object h3,.header2-left-btn button{
+    cursor: pointer;/* عند وضع المؤشر على النعصر تتغير بشكل يد*/
+}
+.right-search{
+    background-color: blue;
+    padding: 10px;
+    color: #ffffff;
+    width: 65%;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.imag-logo-car{
+    display: flex;
+    margin: auto;
+    width: 75%;
+    flex-flow: row wrap;
+}
+.logo-right{
+    margin-right: 10px;
+}
+.logo1{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
